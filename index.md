@@ -51,12 +51,6 @@ For your second milestone, explain what you've worked on since your previous mil
 
 The first milestone was completing the structural build of my robot and testing the motors. Using a series of "motherboards" and wires, the robot can process information and perform actions such as moving left, right, forward and backward. Following instructions are simple, however, some parts were difficult to attach, such as the tire treads. Aligning them was very difficult for me because sometimes the tank driver wheel would stick out too much or be misaligned with the load bearing wheel or vice versa. In my next milestone, I hope to have the robot be fully functional (ultrasonic sensors operating, and the robot being remote controlled) so I can integrate modifications easier before demonstration night. 
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
-
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
