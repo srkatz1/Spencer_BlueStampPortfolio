@@ -45,7 +45,7 @@ For your second milestone, explain what you've worked on since your previous mil
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="[https://www.youtube.com/embed/CaCazFBhYKs]([https://www.youtube.com/watch?v=qWKYwoYF6oM](https://www.youtube.com/watch?v=qWKYwoYF6oM))" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="(https://www.youtube.com/watch?v=qWKYwoYF6oM)" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
  
 The first milestone was completing the structural build of my robot and testing the motors. Using a series of "motherboards" and wires, the robot can process information and move left, right, forward, and backward. Following instructions are simple; however, some parts, such as the tire treads, were difficult to attach. Aligning them was difficult because the load-bearing wheel would sometimes stick out too much or be misaligned with the tank driver's rotation. In my next milestone, I plan to have the robot fully functional (ultrasonic sensors operating and the robot being remote-controlled) so I can integrate modifications easier before demonstration night.. 
 
