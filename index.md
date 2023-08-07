@@ -66,7 +66,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | What the item is used for | $78.90 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | What the item is used for | $78.90 | <a href="[https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/](https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1)"> Mini Tank Robot V2 </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
