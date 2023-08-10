@@ -265,12 +265,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | What the item is used for | $78.90 | <a href="https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1"> Mini Tank Robot V2 </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | Foundation of the Project | $78.90 | <a href="https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1"> Mini Tank Robot V2 </a> |
+| WWZMDiB Ultrasonic Sensor Module | Additional Sensors for Modification | $7.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6"> Link </a> |
 
 # Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
 - [Arduino Reference](https://www.arduino.cc/reference/en/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Mini Tank Robot V2 Wiki](https://wiki.keyestudio.com/Ks0428_keyestudio_Mini_Tank_Robot_V2)
