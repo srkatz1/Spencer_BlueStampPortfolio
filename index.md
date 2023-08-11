@@ -1,3 +1,4 @@
+
 # Mini Object Avoiding Robot
 This obstacle-avoiding robot displays the solution to ground-level accidents in the aviation industry. Placing ultrasonic sensors, which measure the distance from the sensor to another object, on the nose gear and the two wingtips will detect and prevent the aircraft from striking an object. Using Arduino and various hardware sources, I have created a prototype to save the aviation industry thousands of dollars.
 
@@ -11,7 +12,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Spencer K | Fayetteville High School | Aerospace Engineering | Incoming Senior
 
-![Headstone Image](Spencer BSE Project.heic)
+![Spencer BSE Project](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/ea37d2d7-e2e1-4330-ac53-719220ef5528)
   
 # Final Milestone
 
