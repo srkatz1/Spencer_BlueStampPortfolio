@@ -17,7 +17,6 @@ You should comment out all portions of your portfolio that you have not complete
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pRUXsx4GDG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -45,36 +44,36 @@ Here's where you'll put your code. The syntax below places it into a block of co
 
 ```c++
 #include <IRremoteTank.h>
-int RECV_PIN = A0;//define the pin of IR receiver as A0
-int trigPinFront = 5;    // Trigger for Nose Sensor
-int echoPinFront = 4;    // Echo for Nose Sensor
-int trigPinLeft = 10;    // Trigger for Left Wing Sensor
-int echoPinLeft = 9;    // Echo for Left Wing Sensor
-int trigPinRight = 7;    // Trigger for Right Wing Sensor
-int echoPinRight = 8;    // Echo for Right Wing Sensor
-long durationfront, durationLeft, durationRight, cmfront, cmLeft, cmRight;
-int ML_Ctrl=13; //define the direction control pin of right motor
-int ML_PWM=11;  //define the PWM control pin of right motor
-int MR_Ctrl=12;  //define direction control pin of left motor
-int MR_PWM=3 ;  // define the PWM control pin of left motor
-long up = 0xFF629D;
-long left = 0xFF22DD;
-long right = 0xFFC23D;
-long down = 0xFFA857;
-long stop = 0xFF02FD;
+  int RECV_PIN = A0;//define the pin of IR receiver as A0
+  int trigPinFront = 5;    // Trigger for Nose Sensor
+  int echoPinFront = 4;    // Echo for Nose Sensor
+  int trigPinLeft = 10;    // Trigger for Left Wing Sensor
+  int echoPinLeft = 9;    // Echo for Left Wing Sensor
+  int trigPinRight = 7;    // Trigger for Right Wing Sensor
+  int echoPinRight = 8;    // Echo for Right Wing Sensor
+  long durationfront, durationLeft, durationRight, cmfront, cmLeft, cmRight;
+  int ML_Ctrl=13; //define the direction control pin of right motor
+  int ML_PWM=11;  //define the PWM control pin of right motor
+  int MR_Ctrl=12;  //define direction control pin of left motor
+  int MR_PWM=3 ;  // define the PWM control pin of left motor
+  long up = 0xFF629D;
+  long left = 0xFF22DD;
+  long right = 0xFFC23D;
+  long down = 0xFFA857;
+  long stop = 0xFF02FD;
 
-IRrecv irrecv(RECV_PIN);
-decode_results results;
+  IRrecv irrecv(RECV_PIN);
+  decode_results results;
 
-void setup() {
-  //Serial Port begin
-  Serial.begin (9600);
-  //Define inputs and outputs
-  irrecv.enableIRIn(); // Initialize the IR receiver 
-  pinMode(ML_Ctrl, OUTPUT);//define direction control pin of left motor as output
-  pinMode(ML_PWM, OUTPUT);//define PWM control pin of left motor as output
-  pinMode(MR_Ctrl, OUTPUT);//define direction control pin of right motor as output.
-  pinMode(MR_PWM, OUTPUT);//define the PWM control pin of right motor as output
+  void setup() {
+    //Serial Port begin
+    Serial.begin (9600);
+    //Define inputs and outputs
+    irrecv.enableIRIn(); // Initialize the IR receiver 
+    pinMode(ML_Ctrl, OUTPUT);//define direction control pin of left motor as output
+    pinMode(ML_PWM, OUTPUT);//define PWM control pin of left motor as output
+    pinMode(MR_Ctrl, OUTPUT);//define direction control pin of right motor as output.
+    pinMode(MR_PWM, OUTPUT);//define the PWM control pin of right motor as output
   pinMode(trigPinFront, OUTPUT);
   pinMode(echoPinFront, INPUT);
   pinMode(trigPinLeft, OUTPUT);
