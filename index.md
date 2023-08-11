@@ -2,14 +2,8 @@
 # Mini Object Avoiding Robot
 This obstacle-avoiding robot displays the solution to ground-level accidents in the aviation industry. Placing ultrasonic sensors, which measure the distance from the sensor to another object, on the nose gear and the two wingtips will detect and prevent the aircraft from striking an object. Using Arduino and various hardware sources, I have created a prototype to save the aviation industry thousands of dollars.
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|
 | Spencer K | Fayetteville High School | Aerospace Engineering | Incoming Senior
 
 ![Spencer BSE Project](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/bda99387-5944-41ec-ba70-f679716ee6af)
@@ -41,8 +35,7 @@ My first milestone was to complete the hardware of the base project. An abundanc
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
-
+ 
 ~~~c++
 #include <IRremoteTank.h>
   int RECV_PIN = A0;//define the pin of IR receiver as A0
@@ -257,7 +250,7 @@ Here's where you'll put your code. The syntax below places it into a block of co
 # Bill of Materials
 
 | **Part** | **Purpose** | **Price** | **Link** |
-
+|:--:|:--:|:--:|:--:|
 | Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | Foundation of the Project | $78.90 | <a href="https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1"> Mini Tank Robot V2 </a> |
 
 | WWZMDiB Ultrasonic Sensor Module | Additional Sensors for Modification | $7.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6"> 3 Extra Sensors </a> |
