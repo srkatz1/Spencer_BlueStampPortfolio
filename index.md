@@ -4,6 +4,7 @@ This obstacle-avoiding robot displays the solution to ground-level accidents in 
 
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
+|:--:|:--:|:--:|:--:|
 | Spencer K | Fayetteville High School | Aerospace Engineering | Incoming Senior
 
 ![Spencer BSE Project](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/bda99387-5944-41ec-ba70-f679716ee6af)
@@ -32,7 +33,7 @@ Achieving my goal of a remote-controlled robot was a massive leap in completing 
 My first milestone was to complete the hardware of the base project. An abundance of nuts and bolts keep the robot sturdy to handle various types of surfaces and help the robot to operate flawlessly. The motors will be able to move using electrical connections based on commands given through the Arduino once the software is downloaded. Overall, building the robot was not difficult; however, lining up the tire treads was the most challenging part. Holding the bolts and lining up two wheels simultaneously was difficult, and it took me a couple of hours to complete. With the main hardware complete, my next goal is to program the robot to move in various directions using a remote control.
 
 # Schematics 
-Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
+
 
 # Code
  
@@ -252,7 +253,6 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 | **Part** | **Purpose** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | Foundation of the Project | $78.90 | <a href="https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1"> Mini Tank Robot V2 </a> |
-
 | WWZMDiB Ultrasonic Sensor Module | Additional Sensors for Modification | $7.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6"> 3 Extra Sensors </a> |
 
 # Other Resources/Examples
