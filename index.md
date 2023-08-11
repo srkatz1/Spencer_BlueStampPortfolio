@@ -1,5 +1,5 @@
 # Mini Tank Robot
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+This obstacle avoiding robot displays the  solution to ground level accidents in the aviation industry. Placing ultrasonic sensors , which measure the distance from the sensor to another object, on the nose gear and the two wingtips will detect and prevent the aircraft from striking an object. Using Arduino and various hardware sources, I have created a prototype to save the aviation industry thousands of dollars.
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
