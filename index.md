@@ -11,7 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Spencer K | Fayetteville High School | Aerospace Engineering | Incoming Senior
 
-![Headstone Image](logo.svg)
+![Headstone Image](Spencer BSE Project.heic)
   
 # Final Milestone
 
