@@ -256,6 +256,8 @@ Here's where you'll put your code. The syntax below places it into a block of co
 
 # Bill of Materials
 
+**| Part | Purpose | Price | Link |**
+
 | Keyestudio DIY Mini Tank V2.0 Smart Robot car kit for Arduino STEM | Foundation of the Project | $78.90 | <a href="https://www.keyestudio.com/products/new-keyestudio-diy-mini-tank-v20-smart-robot-car-kit-for-arduino-robot-stem-mixly-blocks-coding-support-ios-ampampandroid-app-1"> Mini Tank Robot V2 </a> |
 
 | WWZMDiB Ultrasonic Sensor Module | Additional Sensors for Modification | $7.99 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6"> 3 Extra Sensors </a> |
