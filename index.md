@@ -118,11 +118,9 @@ Here's where you'll put your code. The syntax below places it into a block of co
     analogWrite(MR_PWM,0);//set the PWM control speed of right motor to 200
   }
   void loop() {
-      // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-      // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
 
     // Remote Motor Controls
-   if (irrecv.decode(&results)) {
+     if (irrecv.decode(&results)) {
    if (results.value== up) 
 {
       Serial.println("forward");
@@ -171,7 +169,6 @@ if (results.value== down)
 
 }
 
-
     // Sensor Controls
       digitalWrite(trigPinFront, LOW);
       delayMicroseconds(2);
@@ -179,34 +176,31 @@ if (results.value== down)
       delayMicroseconds(10);
       digitalWrite(trigPinFront, LOW);
       durationfront = pulseIn(echoPinFront, HIGH);
-      //delay(500);
       digitalWrite(trigPinLeft, LOW);
       delayMicroseconds(2);
       digitalWrite(trigPinLeft, HIGH);
       delayMicroseconds(10);
       digitalWrite(trigPinLeft, LOW);
       durationLeft = pulseIn(echoPinLeft, HIGH);
-      //delay(500);
       digitalWrite(trigPinRight, LOW);
       delayMicroseconds(2);
       digitalWrite(trigPinRight, HIGH);
       delayMicroseconds(10);
       digitalWrite(trigPinRight, LOW);
       durationRight = pulseIn(echoPinRight, HIGH);
-      //delay(500);
      // Read the signal from the sensor: a HIGH pulse whose
     // duration is the time (in microseconds) from the sending
     // of the ping to the reception of its echo off of an object.
      // Convert the time into a distance
-      cmfront = (durationfront/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      cmfront = (durationfront/2) / 29.1;     
       Serial.print(cmfront);
       Serial.print("cm");
       Serial.println();
-      cmLeft = (durationLeft/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      cmLeft = (durationLeft/2) / 29.1;     
       Serial.print(cmLeft);
       Serial.print("cm");
       Serial.println();
-      cmRight = (durationRight/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      cmRight = (durationRight/2) / 29.1;     
       Serial.print(cmRight);
       Serial.print("cm");
       Serial.println();
