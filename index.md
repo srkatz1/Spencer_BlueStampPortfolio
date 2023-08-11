@@ -33,8 +33,9 @@ Achieving my goal of a remote-controlled robot was a massive leap in completing 
 My first milestone was to complete the hardware of the base project. An abundance of nuts and bolts keep the robot sturdy to handle various types of surfaces and help the robot to operate flawlessly. The motors will be able to move using electrical connections based on commands given through the Arduino once the software is downloaded. Overall, building the robot was not difficult; however, lining up the tire treads was the most challenging part. Holding the bolts and lining up two wheels simultaneously was difficult, and it took me a couple of hours to complete. With the main hardware complete, my next goal is to program the robot to move in various directions using a remote control.
 
 # Schematics 
+![Schematic](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/82de18d4-ab25-48af-84c7-13d7e8565e4e)
 
-
+This is a schematic similar to my actual robot. The sensors are identical, but the circuit board is not the same, so the wire connections are not exactly how it is on my robot.
 # Code
  
 ~~~c++
