@@ -120,8 +120,8 @@ Here's where you'll put your code. The syntax below places it into a block of co
   void loop() {
 
     // Remote Motor Controls
-     if (irrecv.decode(&results)) {
-   if (results.value== up) 
+       if (irrecv.decode(&results)) {
+     if (results.value== up) 
 {
       Serial.println("forward");
       digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
@@ -129,7 +129,7 @@ Here's where you'll put your code. The syntax below places it into a block of co
       digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
       analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
 } 
-if (results.value== down) 
+    if (results.value== down) 
 {
     Serial.println("backward");
     digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of left motor to LOW
