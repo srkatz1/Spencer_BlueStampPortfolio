@@ -74,12 +74,12 @@ Here's where you'll put your code. The syntax below places it into a block of co
     pinMode(ML_PWM, OUTPUT);//define PWM control pin of left motor as output
     pinMode(MR_Ctrl, OUTPUT);//define direction control pin of right motor as output.
     pinMode(MR_PWM, OUTPUT);//define the PWM control pin of right motor as output
-  pinMode(trigPinFront, OUTPUT);
-  pinMode(echoPinFront, INPUT);
-  pinMode(trigPinLeft, OUTPUT);
-  pinMode(echoPinLeft, INPUT);
-  pinMode(trigPinRight, OUTPUT);
-  pinMode(echoPinRight, INPUT);
+    pinMode(trigPinFront, OUTPUT);
+    pinMode(echoPinFront, INPUT);
+    pinMode(trigPinLeft, OUTPUT);
+    pinMode(echoPinLeft, INPUT);
+    pinMode(trigPinRight, OUTPUT);
+    pinMode(echoPinRight, INPUT);
   
 }
   void forward(){
@@ -117,19 +117,19 @@ Here's where you'll put your code. The syntax below places it into a block of co
     digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
     analogWrite(MR_PWM,0);//set the PWM control speed of right motor to 200
   }
-void loop() {
-  // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
-  // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
+  void loop() {
+      // The sensor is triggered by a HIGH pulse of 10 or more microseconds.
+      // Give a short LOW pulse beforehand to ensure a clean HIGH pulse:
 
-  // Remote Motor Controls
- if (irrecv.decode(&results)) {
-  if (results.value== up) 
+    // Remote Motor Controls
+   if (irrecv.decode(&results)) {
+   if (results.value== up) 
 {
-    Serial.println("forward");
-    digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
-    analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
-    digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
-    analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
+      Serial.println("forward");
+      digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
+      analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
+      analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
 } 
 if (results.value== down) 
 {
@@ -140,119 +140,119 @@ if (results.value== down)
     analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
     
 } 
-  if (results.value== left) 
+    if (results.value== left) 
 {
-    Serial.println("left");
-    digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of left motor to LOW
-    analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
-    digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
-    analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
+      Serial.println("left");
+      digitalWrite(ML_Ctrl,HIGH);//set the direction control pin of left motor to LOW
+      analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
+      analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
     
 } 
-  if (results.value== right) 
+    if (results.value== right) 
 {
-    Serial.println("right");
-    digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
-    analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
-    digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of right motor to LOW
-    analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
+      Serial.println("right");
+      digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
+      analogWrite(ML_PWM,200);//set the PWM control speed of left motor to 200
+      digitalWrite(MR_Ctrl,HIGH);//set the direction control pin of right motor to LOW
+      analogWrite(MR_PWM,200);//set the PWM control speed of right motor to 200
     
 } 
-  if (results.value== stop)
+    if (results.value== stop)
 {
-    Serial.println("stop");
-    digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
-    analogWrite(ML_PWM,0);//set the PWM control speed of left motor to 200
-    digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
-    analogWrite(MR_PWM,0);//set the PWM control speed of right motor to 200
+      Serial.println("stop");
+      digitalWrite(ML_Ctrl,LOW);//set the direction control pin of left motor to LOW
+      analogWrite(ML_PWM,0);//set the PWM control speed of left motor to 200
+      digitalWrite(MR_Ctrl,LOW);//set the direction control pin of right motor to LOW
+      analogWrite(MR_PWM,0);//set the PWM control speed of right motor to 200
 }
 
-  irrecv.resume();
+    irrecv.resume();
 
 }
 
 
-  // Sensor Controls
-    digitalWrite(trigPinFront, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPinFront, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPinFront, LOW);
-    durationfront = pulseIn(echoPinFront, HIGH);
-    //delay(500);
-    digitalWrite(trigPinLeft, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPinLeft, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPinLeft, LOW);
-    durationLeft = pulseIn(echoPinLeft, HIGH);
-    //delay(500);
-    digitalWrite(trigPinRight, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPinRight, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPinRight, LOW);
-    durationRight = pulseIn(echoPinRight, HIGH);
-    //delay(500);
-   // Read the signal from the sensor: a HIGH pulse whose
-  // duration is the time (in microseconds) from the sending
-  // of the ping to the reception of its echo off of an object.
-   // Convert the time into a distance
-    cmfront = (durationfront/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-    Serial.print(cmfront);
-    Serial.print("cm");
-    Serial.println();
-    cmLeft = (durationLeft/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-    Serial.print(cmLeft);
-    Serial.print("cm");
-    Serial.println();
-    cmRight = (durationRight/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
-    Serial.print(cmRight);
-    Serial.print("cm");
-    Serial.println();
+    // Sensor Controls
+      digitalWrite(trigPinFront, LOW);
+      delayMicroseconds(2);
+      digitalWrite(trigPinFront, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(trigPinFront, LOW);
+      durationfront = pulseIn(echoPinFront, HIGH);
+      //delay(500);
+      digitalWrite(trigPinLeft, LOW);
+      delayMicroseconds(2);
+      digitalWrite(trigPinLeft, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(trigPinLeft, LOW);
+      durationLeft = pulseIn(echoPinLeft, HIGH);
+      //delay(500);
+      digitalWrite(trigPinRight, LOW);
+      delayMicroseconds(2);
+      digitalWrite(trigPinRight, HIGH);
+      delayMicroseconds(10);
+      digitalWrite(trigPinRight, LOW);
+      durationRight = pulseIn(echoPinRight, HIGH);
+      //delay(500);
+     // Read the signal from the sensor: a HIGH pulse whose
+    // duration is the time (in microseconds) from the sending
+    // of the ping to the reception of its echo off of an object.
+     // Convert the time into a distance
+      cmfront = (durationfront/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      Serial.print(cmfront);
+      Serial.print("cm");
+      Serial.println();
+      cmLeft = (durationLeft/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      Serial.print(cmLeft);
+      Serial.print("cm");
+      Serial.println();
+      cmRight = (durationRight/2) / 29.1;     // Divide by 29.1 or multiply by 0.0343
+      Serial.print(cmRight);
+      Serial.print("cm");
+      Serial.println();
 
-  if (cmfront < 15){
-    results.value== 0;
-    Serial.println("FrontSensor: Stop due to object avoidance");
-    stop_sensor();
-    delay(500);
-    backward();
-    delay(500);
-    stop_sensor();
-    if (results.value== stop){
+    if (cmfront < 15){
+      results.value== 0;
+      Serial.println("FrontSensor: Stop due to object avoidance");
       stop_sensor();
+      delay(500);
+      backward();
+      delay(500);
+      stop_sensor();
+      if (results.value== stop){
+        stop_sensor();
     }
   }
-  if (cmLeft < 10){
-    results.value== 0;
-    Serial.println("Left Sensor: Stop due to object avoidance");
-    stop_sensor();
-    delay(200);
-    backward();
-    delay(1000);
-    right_sensor();
-    delay(400);
-    forward();
-    delay(1000);
-    stop_sensor();
-    if (results.value== stop){
+    if (cmLeft < 10){
+      results.value== 0;
+      Serial.println("Left Sensor: Stop due to object avoidance");
       stop_sensor();
+      delay(200);
+      backward();
+      delay(1000);
+      right_sensor();
+      delay(400);
+      forward();
+      delay(1000);
+      stop_sensor();
+      if (results.value== stop){
+        stop_sensor();
     }
   }
-  if (cmRight < 10){
-    results.value== 0;
-    Serial.println("Right Sensor: Stop due to object avoidance");
-    stop_sensor();
-    delay(1000);
-    backward();
-    delay(1000);
-    left_sensor();
-    delay(400);
-    forward();
-    delay(1000);
-    stop_sensor();
-    if (results.value== stop){
+    if (cmRight < 10){
+      results.value== 0;
+      Serial.println("Right Sensor: Stop due to object avoidance");
       stop_sensor();
+      delay(1000);
+      backward();
+      delay(1000);
+      left_sensor();
+      delay(400);
+      forward();
+      delay(1000);
+      stop_sensor();
+      if (results.value== stop){
+        stop_sensor();
     }
   }
 }
