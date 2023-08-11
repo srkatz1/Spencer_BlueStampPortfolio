@@ -12,7 +12,8 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Spencer K | Fayetteville High School | Aerospace Engineering | Incoming Senior
 
-![Spencer BSE Project](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/9f6021e5-64a4-437c-b6b5-183d025540ee)
+![Spencer BSE Project](https://github.com/srkatz1/Spencer_BlueStampPortfolio/assets/140825566/bda99387-5944-41ec-ba70-f679716ee6af)
+
 
   
 # Final Milestone
