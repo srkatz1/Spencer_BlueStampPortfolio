@@ -42,7 +42,7 @@ Here's where you'll put images of your schematics. [Tinkercad](https://www.tinke
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
+~~~c++
 #include <IRremoteTank.h>
   int RECV_PIN = A0;//define the pin of IR receiver as A0
   int trigPinFront = 5;    // Trigger for Nose Sensor
@@ -257,6 +257,7 @@ if (results.value== down)
   }
 }
 //****************************************************************
+~~~
 
 # Bill of Materials
 Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
